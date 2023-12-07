@@ -15,7 +15,7 @@ function myfunc(coeffs, t)
     coeffs.γ = 2+cos(sqrt(t))
 end
 
-MemoryEquation(α, β, γ, δ, F0, ∂F0, kernel; update_coefficients! = myfunc)
+MemoryEquation(α, β, γ, δ, F0, dF0, kernel; update_coefficients! = myfunc)
 ```
 Alternatively, let's say we want to solve 
 $\ddot{F} + F - t = 0$,
